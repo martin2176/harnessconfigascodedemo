@@ -1,3 +1,4 @@
 name: frontend
 service: frontend
 app: frontend
+version: "6ffc120a"

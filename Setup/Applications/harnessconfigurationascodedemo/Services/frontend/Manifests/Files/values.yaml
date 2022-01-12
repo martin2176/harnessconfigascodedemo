@@ -3,6 +3,6 @@ service: placeholder
 app: placeholder
 env: placeholder
 serviceteam: placeholder
-version: "6ffc120a"
+version: placeholder
 namespace: "${infra.kubernetes.namespace}"
 image: ${artifact.metadata.image}
