@@ -1,7 +1,0 @@
-name: placeholder
-service: placeholder
-app: placeholder
-env: placeholder
-serviceteam: placeholder
-version: "${backend.envVars.GIT_SHA_SHORT}"
-namespace: "${infra.kubernetes.namespace}"
