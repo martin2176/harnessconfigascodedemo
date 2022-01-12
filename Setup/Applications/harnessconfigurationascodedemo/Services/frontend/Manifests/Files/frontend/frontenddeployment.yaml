@@ -8,8 +8,7 @@ metadata:
     serviceteam: {{.Values.serviceteam}}
     env: {{.Values.env}}
     service: {{.Values.service}}
-#    version: "{{.Values.version}}"
-    version: v1
+    version: "{{.Values.version}}"
 spec:
   replicas: 1
   selector:
@@ -27,8 +26,7 @@ spec:
        serviceteam: {{.Values.serviceteam}}
        env: {{.Values.env}}
        service: {{.Values.service}}
-#       version: "{{.Values.version}}"
-       version: v1
+       version: "{{.Values.version}}"
     spec:
       containers:
       - name: frontendcontainer
