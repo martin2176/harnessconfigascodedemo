@@ -52,6 +52,11 @@ rollbackPhases:
     steps:
     - type: K8S_DEPLOYMENT_ROLLING_ROLLBACK
       name: Rollback Deployment
+      properties:
+        stateTimeoutInMinutes: 4
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
