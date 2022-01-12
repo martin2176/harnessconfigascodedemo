@@ -8,7 +8,8 @@ metadata:
     serviceteam: {{.Values.serviceteam}}
     env: {{.Values.env}}
     service: {{.Values.service}}
-    version: "{{.Values.version}}"
+#    version: "{{.Values.version}}"
+   version: v1
 spec:
   replicas: 1
   strategy:
@@ -31,7 +32,8 @@ spec:
        serviceteam: {{.Values.serviceteam}}
        env: {{.Values.env}}
        service: {{.Values.service}}
-       version: "{{.Values.version}}"
+#       version: "{{.Values.version}}"
+       version: v1
     spec:
       containers:
       - name: frontendcontainer
