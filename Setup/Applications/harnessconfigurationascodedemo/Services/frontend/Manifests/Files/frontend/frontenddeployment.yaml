@@ -30,7 +30,8 @@ spec:
     spec:
       containers:
       - name: frontendcontainer
-        image: {{.Values.image}}
+#        image: {{.Values.image}}
+        image: martinharnessacr.azurecr.io/frontend:{{.Values.version}}
         imagePullPolicy: Always
         readinessProbe:
          httpGet:
