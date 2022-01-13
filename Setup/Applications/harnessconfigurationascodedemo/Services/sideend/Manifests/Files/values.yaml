@@ -1,0 +1,8 @@
+name: placeholder
+service: placeholder
+app: placeholder
+env: placeholder
+serviceteam: placeholder
+version: placeholder
+namespace: "${infra.kubernetes.namespace}"
+image: ${artifact.metadata.image}
