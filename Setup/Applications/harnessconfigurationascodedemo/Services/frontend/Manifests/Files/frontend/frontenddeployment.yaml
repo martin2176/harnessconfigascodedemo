@@ -10,7 +10,7 @@ metadata:
     service: {{.Values.service}}
     version: "{{.Values.version}}"
 spec:
-  replicas: 4
+  replicas: 5
   selector:
     matchLabels:
      app: {{.Values.app}}
