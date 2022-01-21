@@ -65,4 +65,11 @@ rollbackPhases:
   provisionNodes: false
   serviceName: frontend
   statefulSet: false
-templatized: false
+templatized: true
+userVariables:
+- type: TEXT
+  allowedValues: demo1,demo2,demo3
+  description: Enter the namespace to deploy this
+  fixed: false
+  mandatory: true
+  name: namespace
