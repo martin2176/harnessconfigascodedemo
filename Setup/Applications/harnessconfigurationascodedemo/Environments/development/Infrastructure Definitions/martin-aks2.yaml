@@ -5,5 +5,5 @@ deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
   cloudProviderName: martin-aks2
-  namespace: harnessdemoconfigurationascode
+  namespace: ${workflow.variables.namespace}
   releaseName: release-${infra.kubernetes.infraId}
