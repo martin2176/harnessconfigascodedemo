@@ -36,6 +36,16 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
+    steps:
+    - type: DATA_DOG_LOG
+      name: Datadog Log
+      properties:
+        analysisServerConfigId: kvgug_WhQp-V9yMQvbrOTw
+        comparisonStrategy: COMPARE_WITH_CURRENT
+        hostnameField: pod_name
+        hostnameTemplate: ${instanceDetails.k8s.podName}
+        query: (kube_namespace:${infra.kubernetes.namespace}) AND (error)
+        timeDuration: 5
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
