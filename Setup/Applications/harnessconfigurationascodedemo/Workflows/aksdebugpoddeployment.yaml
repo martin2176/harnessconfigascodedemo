@@ -25,6 +25,14 @@ phases:
   phaseSteps:
   - type: K8S_PHASE_STEP
     name: Deploy
+    steps:
+    - type: K8S_APPLY
+      name: Apply
+      properties:
+        delegateSelectors:
+        - martin-harness-demo-vm1
+        filePaths: aksdebugpod/deployment.yaml,aksdebugpod/service.yaml
+        stateTimeoutInMinutes: 2
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
