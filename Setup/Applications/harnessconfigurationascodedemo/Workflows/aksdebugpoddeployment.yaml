@@ -44,8 +44,8 @@ phases:
         comparisonStrategy: COMPARE_WITH_CURRENT
         executeWithPreviousSteps: false
         hostnameField: pod_name
-        hostnameTemplate: ${instanceDetails.k8s.podName}
-        query: (kube_namespace:${workflow.variables.namespace}) AND *error*
+        hostnameTemplate: ''
+        query: kube_namespace:demo1
         templateUuid: null
         templateVariables: null
         templateVersion: null
