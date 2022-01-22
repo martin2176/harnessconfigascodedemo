@@ -61,4 +61,10 @@ rollbackPhases:
   provisionNodes: false
   serviceName: aksdebugpod
   statefulSet: false
-templatized: false
+templatized: true
+userVariables:
+- type: TEXT
+  allowedValues: demo1,demo2,demo3
+  fixed: false
+  mandatory: true
+  name: namespace
