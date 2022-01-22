@@ -45,6 +45,9 @@ phases:
         hostnameField: pod_name
         hostnameTemplate: ${instanceDetails.k8s.podName}
         query: (kube_namespace:${infra.kubernetes.namespace}) AND (error)
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         timeDuration: 5
     stepsInParallel: false
   - type: K8S_PHASE_STEP
