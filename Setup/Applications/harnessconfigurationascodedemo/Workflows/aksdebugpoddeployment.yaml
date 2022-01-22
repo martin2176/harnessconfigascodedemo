@@ -33,6 +33,12 @@ phases:
         - martin-harness-demo-vm1
         filePaths: aksdebugpod/deployment.yaml,aksdebugpod/service.yaml
         stateTimeoutInMinutes: 2
+    - type: K8S_DEPLOYMENT_ROLLING
+      name: Rollout Deployment
+      properties:
+        delegateSelectors:
+        - martin-harness-demo-vm1
+        stateTimeoutInMinutes: 1
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
