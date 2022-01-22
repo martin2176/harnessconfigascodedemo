@@ -24,7 +24,7 @@ phases:
   name: Rolling
   phaseSteps:
   - type: K8S_PHASE_STEP
-    name: Deploy
+    name: Create
     steps:
     - type: K8S_APPLY
       name: Apply
