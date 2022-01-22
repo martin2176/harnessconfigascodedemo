@@ -52,7 +52,7 @@ rollbackPhases:
   phaseNameForRollback: Rolling
   phaseSteps:
   - type: K8S_PHASE_STEP
-    name: Deploy
+    name: Delete
     phaseStepNameForRollback: Deploy
     statusForRollback: SUCCESS
     steps:
