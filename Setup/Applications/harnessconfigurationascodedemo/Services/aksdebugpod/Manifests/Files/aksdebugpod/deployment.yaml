@@ -1,0 +1,47 @@
+#harness.io/skip-file-for-deploy
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: aksdebug
+    serviceteam: ecom
+    env: dev
+    service: aksdebug
+    version: v1
+  name: aksdebug
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+       app: aksdebug
+       serviceteam: ecom
+       env: dev
+       service: aksdebug
+       version: v1
+  strategy: {}
+  template:
+    metadata:
+     labels:
+       app: aksdebug
+       serviceteam: ecom
+       env: dev
+       service: aksdebug
+       version: v1
+    spec:
+      containers:
+      - image: martin2176/aksdebugpod:v3
+        imagePullPolicy: IfNotPresent
+        name: aksdebug
+        ports:
+        - containerPort: 8080
+        securityContext:
+         allowPrivilegeEscalation: true
+         capabilities:
+          add:
+           - NET_RAW
+           - NET_ADMIN
+         privileged: true  
+        command: ["/bin/sh"]
+        args: ["-c", "sleep 1000000"]
+---
