@@ -55,7 +55,7 @@ phases:
         comparisonStrategy: COMPARE_WITH_CURRENT
         executeWithPreviousSteps: false
         hostnameField: pod_name
-        hostnameTemplate: ''
+        hostnameTemplate: ${instanceDetails.k8s.podName}
         query: kube_namespace:demo1
         templateUuid: null
         templateVariables: null
