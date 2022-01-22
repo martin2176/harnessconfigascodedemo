@@ -1,5 +1,7 @@
 harnessApiVersion: '1.0'
 type: SHELL_SCRIPT
-scriptString: echo hello
+scriptString: |-
+  echo "this is a shell script"
+  echo hello
 scriptType: BASH
 timeoutMillis: 600000
