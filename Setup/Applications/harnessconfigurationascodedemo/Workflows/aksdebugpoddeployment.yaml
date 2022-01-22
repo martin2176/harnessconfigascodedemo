@@ -45,7 +45,7 @@ phases:
         executeWithPreviousSteps: false
         hostnameField: pod_name
         hostnameTemplate: ${instanceDetails.k8s.podName}
-        query: (kube_namespace:${workflow.variables.namespace}) AND (error)
+        query: (kube_namespace:${workflow.variables.namespace}) AND *error*
         templateUuid: null
         templateVariables: null
         templateVersion: null
