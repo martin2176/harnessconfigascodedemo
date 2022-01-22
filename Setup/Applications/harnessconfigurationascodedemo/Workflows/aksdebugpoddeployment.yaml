@@ -42,6 +42,7 @@ phases:
       properties:
         analysisServerConfigId: kvgug_WhQp-V9yMQvbrOTw
         comparisonStrategy: COMPARE_WITH_CURRENT
+        executeWithPreviousSteps: false
         hostnameField: pod_name
         hostnameTemplate: ${instanceDetails.k8s.podName}
         query: (kube_namespace:${workflow.variables.namespace}) AND (error)
