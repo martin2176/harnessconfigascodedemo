@@ -25,6 +25,11 @@ phases:
   phaseSteps:
   - type: K8S_PHASE_STEP
     name: Create
+    stepSkipStrategies:
+    - assertionExpression: 1==1
+      scope: SPECIFIC_STEPS
+      steps:
+      - Apply
     steps:
     - type: K8S_APPLY
       name: Apply
