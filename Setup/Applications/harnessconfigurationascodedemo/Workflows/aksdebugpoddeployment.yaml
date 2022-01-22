@@ -51,6 +51,7 @@ phases:
         templateVersion: null
         timeDuration: 5
     stepsInParallel: false
+    waitInterval: 40
   - type: K8S_PHASE_STEP
     name: Wrap Up
     stepsInParallel: false
