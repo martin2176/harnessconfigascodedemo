@@ -86,9 +86,6 @@ rollbackPhases:
     name: Delete
     phaseStepNameForRollback: Deploy
     statusForRollback: SUCCESS
-    stepSkipStrategies:
-    - assertionExpression: 1==1
-      scope: ALL_STEPS
     steps:
     - type: K8S_DELETE
       name: Delete
