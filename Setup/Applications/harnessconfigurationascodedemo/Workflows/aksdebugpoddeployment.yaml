@@ -93,6 +93,13 @@ rollbackPhases:
         deleteNamespacesForRelease: false
         filePaths: aksdebugpod/service.yaml,aksdebugpod/deployment.yaml
         stateTimeoutInMinutes: 1
+    - type: APPROVAL
+      name: Do you want to rollback?
+      properties:
+        approvalStateType: USER_GROUP
+        timeoutMillis: 86400000
+        userGroupNames:
+        - Account Administrator
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
