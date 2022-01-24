@@ -2,6 +2,17 @@ harnessApiVersion: '1.0'
 type: ROLLING
 concurrencyStrategy: INFRA
 envName: development
+failureStrategies:
+- actionAfterTimeout: ROLLBACK
+  executionScope: WORKFLOW
+  failureTypes:
+  - CONNECTIVITY
+  - AUTHENTICATION
+  - VERIFICATION_FAILURE
+  - APPLICATION_ERROR
+  manualInterventionTimeout: 86400000
+  repairActionCode: MANUAL_INTERVENTION
+  retryCount: 0
 notificationRules:
 - conditions:
   - FAILED
