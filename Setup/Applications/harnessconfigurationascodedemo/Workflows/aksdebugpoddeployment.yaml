@@ -75,7 +75,16 @@ phases:
     - type: SHELL_SCRIPT
       name: helloworld
       properties:
+        commandPath: null
+        connectionAttributeName: null
         executeOnDelegate: true
+        host: null
+        includeInfraSelectors: true
+        publishAsVar: false
+        sshKeyRefName: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
         timeoutMillis: 600000
       templateUri: App/martin2176/helloworld:latest
     stepsInParallel: false
