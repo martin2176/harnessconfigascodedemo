@@ -69,6 +69,15 @@ phases:
   provisionNodes: false
   serviceName: aksdebugpod
   statefulSet: false
+  templateExpressions:
+  - expression: ${Service}
+    fieldName: serviceId
+    metadata:
+    - name: relatedField
+    - name: artifactType
+      value: DOCKER
+    - name: entityType
+      value: SERVICE
 rollbackPhases:
 - type: KUBERNETES
   computeProviderName: martin-aks2
@@ -98,8 +107,31 @@ rollbackPhases:
   provisionNodes: false
   serviceName: aksdebugpod
   statefulSet: false
+  templateExpressions:
+  - expression: ${Service}
+    fieldName: serviceId
+    metadata:
+    - name: relatedField
+    - name: artifactType
+      value: DOCKER
+    - name: entityType
+      value: SERVICE
+templateExpressions:
+- expression: ${Service}
+  fieldName: serviceId
+  metadata:
+  - name: relatedField
+  - name: artifactType
+    value: DOCKER
+  - name: entityType
+    value: SERVICE
 templatized: true
 userVariables:
+- type: ENTITY
+  description: Variable for Service entity in Rollback Rolling
+  fixed: false
+  mandatory: true
+  name: Service
 - type: TEXT
   allowedValues: demo1,demo2,demo3
   fixed: false
