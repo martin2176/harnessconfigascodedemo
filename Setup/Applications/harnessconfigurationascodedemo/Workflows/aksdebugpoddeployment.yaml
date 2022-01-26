@@ -50,6 +50,9 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
+    stepSkipStrategies:
+    - assertionExpression: 1==1
+      scope: ALL_STEPS
     steps:
     - type: DATA_DOG_LOG
       name: Datadog Log
