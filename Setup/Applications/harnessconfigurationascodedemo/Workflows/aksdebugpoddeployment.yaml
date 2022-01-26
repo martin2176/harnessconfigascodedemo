@@ -71,6 +71,13 @@ phases:
     waitInterval: 15
   - type: K8S_PHASE_STEP
     name: Ansible step
+    steps:
+    - type: SHELL_SCRIPT
+      name: helloworld
+      properties:
+        executeOnDelegate: true
+        timeoutMillis: 600000
+      templateUri: App/martin2176/helloworld:latest
     stepsInParallel: false
   provisionNodes: false
   serviceName: aksdebugpod
