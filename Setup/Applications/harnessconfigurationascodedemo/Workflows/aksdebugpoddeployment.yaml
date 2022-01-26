@@ -70,7 +70,7 @@ phases:
     stepsInParallel: false
     waitInterval: 15
   - type: K8S_PHASE_STEP
-    name: Wrap Up
+    name: Ansible step
     stepsInParallel: false
   provisionNodes: false
   serviceName: aksdebugpod
