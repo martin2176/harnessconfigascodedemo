@@ -71,6 +71,11 @@ phases:
     waitInterval: 15
   - type: K8S_PHASE_STEP
     name: Ansible step
+    stepSkipStrategies:
+    - assertionExpression: 1==1
+      scope: SPECIFIC_STEPS
+      steps:
+      - helloworld
     steps:
     - type: SHELL_SCRIPT
       name: helloworld
