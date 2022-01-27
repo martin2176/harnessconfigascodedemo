@@ -87,6 +87,30 @@ phases:
         templateExpressions: null
         timeoutMillis: 600000
       templateUri: App/martin2176/helloworld:latest
+    - type: SHELL_SCRIPT
+      name: perl helloworld
+      properties:
+        commandPath: null
+        connectionAttributeName: null
+        executeOnDelegate: true
+        host: null
+        includeInfraSelectors: true
+        outputVars: ''
+        publishAsVar: false
+        scriptString: |-
+          cat <<EOF > /tmp/helloworld.pl
+          #!/usr/bin/perl
+          use warnings;
+          print("Hello, World!\n");
+          EOF
+          perl  /tmp/helloworld.pl
+        scriptType: BASH
+        sshKeyRefName: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
+        templateVariables: ''
+        timeoutMillis: 60000
     stepsInParallel: false
   provisionNodes: false
   serviceName: aksdebugpod
