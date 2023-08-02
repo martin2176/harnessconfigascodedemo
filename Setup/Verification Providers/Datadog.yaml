@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: DATA_DOG
+apiKey: datadog-apikey
+applicationKey: datadog-appkey
+url: https://app.datadoghq.com/api/v1/

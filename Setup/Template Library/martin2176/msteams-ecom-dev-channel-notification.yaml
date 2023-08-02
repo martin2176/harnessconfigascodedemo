@@ -1,0 +1,32 @@
+harnessApiVersion: '1.0'
+type: SHELL_SCRIPT
+scriptString: |-
+  echo "${title}"
+  echo "${subtitle}"
+
+  cat <<EOF > /tmp/out.json
+  {
+  "@type": "MessageCard",
+  "@context":"http://schema.org/extensions",
+  "themeColor":"0076D7",
+  "summary":"foo",
+  "title":"${title}",
+  "sections": [{
+  "activitySubtitle": "${subtitle}",
+  "facts": [{
+  "name": "Deployment url",
+  "value":  "${deploymentUrl}"
+  }]
+  }]
+  }
+  EOF
+
+
+  curl --silent --location --request POST 'https://mydigitalspace.webhook.office.com/webhookb2/45515682-2e07-4798-9ccb-4018ae50f6e7@3c2f8435-994c-4552-8fe8-2aec2d0822e4/IncomingWebhook/02cfe9a15929473f8025e2ea3899b76e/d9490dad-aa85-4c35-b4b0-48b407cf9309' \
+  --header 'Content-Type: application/json' \
+  --data @/tmp/out.json
+scriptType: BASH
+timeoutMillis: 600000
+variables:
+- name: title
+- name: subtitle
