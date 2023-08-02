@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: SHELL_SCRIPT
+scriptString: "cat <<EOF > /tmp/helloworld.yaml\n---\n# This playbook prints a simple debug message\n- name: Echo \n  hosts: 127.0.0.1\n  connection: local\n\n  tasks:\n  - name: Print message\n    debug:\n      msg: Hello, world!\n\nEOF\nansible-playbook /tmp/helloworld.yaml"
+scriptType: BASH
+timeoutMillis: 600000
