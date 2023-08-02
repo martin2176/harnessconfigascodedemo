@@ -1,8 +1,0 @@
-harnessApiVersion: '1.0'
-type: DOCKER
-delegateSelectors:
-- martin-harness-demo-vm1
-password: gcpkms:azure-acr-password
-skipValidation: false
-url: https://martinharnessacr.azurecr.io/
-username: c8714a04-0fc6-46fc-ad03-3ab58061a6a4

@@ -1,6 +1,0 @@
-harnessApiVersion: '1.0'
-type: AZURE
-azureEnvironmentType: AZURE
-clientId: c8714a04-0fc6-46fc-ad03-3ab58061a6a4
-key: gcpkms:sandbox-domainarchitecture-rg
-tenantId: 3c2f8435-994c-4552-8fe8-2aec2d0822e4
