@@ -1,0 +1,11 @@
+harnessApiVersion: '1.0'
+type: GIT
+delegateSelectors:
+- martin-aks2-delegate-cfbbxv-0
+disableUserGitConfig: false
+keyAuth: false
+password: gcpkms:github-password-martin-aug2023
+providerType: GITHUB
+url: https://github.com/martin2176/harnessdemo
+urlType: REPO
+username: martin2176
