@@ -1,4 +1,5 @@
 harnessApiVersion: '1.0'
 type: DOCKER
+collectionEnabled: true
 imageName: martin2176/aksdebugpod
-serverName: docker hub
+serverName: martin docker hub
