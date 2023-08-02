@@ -1,7 +1,0 @@
-harnessApiVersion: '1.0'
-type: KUBERNETES_CLUSTER
-authType: SERVICE_ACCOUNT
-masterUrl: https://martin-aks2-n6j6ki86.hcp.centralus.azmk8s.io:443
-serviceAccountToken: gcpkms:martin-aks2-serviceaccount-token
-skipValidation: false
-useKubernetesDelegate: false

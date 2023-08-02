@@ -1,7 +1,0 @@
-harnessApiVersion: '1.0'
-type: JENKINS
-authMechanism: Username/Password
-password: gcpkms:jenkins-password
-url: http://13.86.88.70:8080
-useConnectorUrlForJobExecution: true
-username: admin
