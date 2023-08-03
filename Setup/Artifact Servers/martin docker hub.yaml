@@ -3,7 +3,7 @@ type: DOCKER
 delegateSelectors:
 - martin-aks2-delegate-cfbbxv-0
 skipValidation: false
-url: https://registry.hub.docker.com/v2/
+url: https://hub.docker.com/
 usageRestrictions:
   appEnvRestrictions:
   - appFilter:
