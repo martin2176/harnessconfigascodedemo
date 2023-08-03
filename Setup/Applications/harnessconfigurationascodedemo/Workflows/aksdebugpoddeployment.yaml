@@ -103,9 +103,11 @@ phases:
       properties:
         commandPath: null
         connectionAttributeName: null
+        delegateSelectors:
+        - martin-aks2-delegate-cfbbxv-0
         executeOnDelegate: true
         host: null
-        includeInfraSelectors: true
+        includeInfraSelectors: false
         outputVars: ''
         publishAsVar: false
         scriptString: |-
@@ -120,7 +122,9 @@ phases:
         sweepingOutputName: null
         sweepingOutputScope: null
         templateExpressions: null
-        templateVariables: ''
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         timeoutMillis: 60000
     stepsInParallel: false
   provisionNodes: false
