@@ -2,17 +2,7 @@ harnessApiVersion: '1.0'
 type: DOCKER
 delegateSelectors:
 - martin-aks2-delegate-cfbbxv-0
+password: gcpkms:docker-cr-password
 skipValidation: false
 url: https://index.docker.io/v2/
-usageRestrictions:
-  appEnvRestrictions:
-  - appFilter:
-      filterType: ALL
-    envFilter:
-      filterTypes:
-      - PROD
-  - appFilter:
-      filterType: ALL
-    envFilter:
-      filterTypes:
-      - NON_PROD
+username: martin2176
