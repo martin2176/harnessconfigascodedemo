@@ -166,3 +166,4 @@ userVariables:
   fixed: false
   mandatory: true
   name: namespace
+  value: demo1
