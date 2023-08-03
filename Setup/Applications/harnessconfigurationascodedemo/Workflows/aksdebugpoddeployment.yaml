@@ -38,9 +38,13 @@ phases:
       name: Apply
       properties:
         delegateSelectors:
-        - martin-harness-demo-vm1
+        - martin-aks2-delegate-cfbbxv-0
         filePaths: aksdebugpod/deployment.yaml,aksdebugpod/service.yaml
         stateTimeoutInMinutes: 2
+        stepOverride: false
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
     - type: K8S_DEPLOYMENT_ROLLING
       name: Rollout Deployment
       properties:
