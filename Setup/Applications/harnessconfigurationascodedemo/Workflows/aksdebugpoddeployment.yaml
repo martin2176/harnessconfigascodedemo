@@ -90,7 +90,7 @@ phases:
         - martin-aks2-delegate-cfbbxv-0
         executeOnDelegate: true
         host: null
-        includeInfraSelectors: true
+        includeInfraSelectors: false
         publishAsVar: false
         sshKeyRefName: null
         sweepingOutputName: null
