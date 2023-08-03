@@ -1,6 +1,6 @@
 harnessApiVersion: '1.0'
 type: ACR
-collectionEnabled: true
+collectionEnabled: false
 registryHostName: martinharnessacr.azurecr.io
 registryName: martinharnessacr
 repositoryName: dd-java-agent
