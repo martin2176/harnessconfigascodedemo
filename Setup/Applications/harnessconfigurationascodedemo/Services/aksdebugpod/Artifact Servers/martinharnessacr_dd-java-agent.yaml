@@ -1,0 +1,8 @@
+harnessApiVersion: '1.0'
+type: ACR
+collectionEnabled: false
+registryHostName: martinharnessacr.azurecr.io
+registryName: martinharnessacr
+repositoryName: dd-java-agent
+serverName: martin sandbox azure rg
+subscriptionId: 8d01f77a-4a6f-4548-b5f3-743769a1b178
