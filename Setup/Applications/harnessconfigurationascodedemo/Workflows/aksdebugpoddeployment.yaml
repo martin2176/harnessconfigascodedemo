@@ -86,6 +86,8 @@ phases:
       properties:
         commandPath: null
         connectionAttributeName: null
+        delegateSelectors:
+        - martin-aks2-delegate-cfbbxv-0
         executeOnDelegate: true
         host: null
         includeInfraSelectors: true
