@@ -2,3 +2,7 @@ harnessApiVersion: '1.0'
 type: ENVIRONMENT
 configMapYamlByServiceTemplateName: {}
 environmentType: NON_PROD
+variableOverrides:
+- name: hello
+  value: ok
+  valueType: TEXT
