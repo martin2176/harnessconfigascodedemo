@@ -76,7 +76,7 @@ phases:
   - type: K8S_PHASE_STEP
     name: Ansible step
     stepSkipStrategies:
-    - assertionExpression: 1==1
+    - assertionExpression: 1==0
       scope: SPECIFIC_STEPS
       steps:
       - helloworld
